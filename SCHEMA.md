@@ -40,7 +40,7 @@
 | nationality    | TEXT      | Nationality of the constructor    |
 | url            | TEXT      | URL link to Wikipedia page        |
 
-## Table: drivers_standings
+## Table: driver_standings
 | Column name       | Data type | Description                                             |
 |-------------------|-----------|---------------------------------------------------------|
 | driverStandingsId | INT       | Unique identifier for each driver standing              |
