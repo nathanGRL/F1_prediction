@@ -17,7 +17,7 @@
 | constructorResultsId | INT       | Unique identifier for each result entry |
 | raceId               | INT       | Identifier for the race                 |
 | constructorId        | INT       | Identifier for the constructor (team)   |
-| points               | INT       | Points awarded to the constructor       |
+| points               | FLOAT     | Points awarded to the constructor       |
 | status               | TEXT      | Status of the constructor in the race   |
 
 ## Table: constructor_standings
@@ -26,7 +26,7 @@
 | constructorStandingsId | INT       | Unique identifier for each constructor standing    |
 | raceId                 | INT       | Identifier for the race                            |
 | constructorId          | INT       | Identifier for the constructor (team)              |
-| points                 | INT       | Points awarded to the constructor after the race   |
+| points                 | FLOAT     | Points awarded to the constructor after the race   |
 | position               | INT       | Position in the standings after the race           |
 | positionText           | TEXT      | Textual representation of the position (e.g., "1") |
 | wins                   | INT       | Number of wins by the constructor up to this race  |
@@ -46,7 +46,7 @@
 | driverStandingsId | INT       | Unique identifier for each driver standing              |
 | raceId            | INT       | Identifier for the race                                 |
 | driverId          | INT       | Identifier for the driver                               |
-| points            | INT       | Points awarded to the driver after the race             |
+| points            | FLOAT     | Points awarded to the driver after the race             |
 | position          | INT       | Position in the standings after the race                |
 | positionText      | TEXT      | Textual representation of the position (e.g., "1", "R") |
 | wins              | INT       | Number of wins by the driver up to this race            |
@@ -132,7 +132,7 @@
 | position        | INT       | Finishing position (nullable, may be null for DNFs)                        |
 | positionText    | TEXT      | Textual representation of position (e.g., "R" for retired, "W" for winner) |
 | positionOrder   | INT       | Order of finishing position (numeric, always present)                      |
-| points          | INT       | Points scored in the race                                                  |
+| points          | FLOAT     | Points scored in the race                                                  |
 | laps            | INT       | Number of laps completed                                                   |
 | time            | TEXT      | Race time or gap to winner (format: "H:MM:SS.sss" or "+X.XXX")             |
 | milliseconds    | INT       | Race time in milliseconds (nullable)                                       |
@@ -160,7 +160,7 @@
 | position       | INT       | Finishing position (nullable, may be null for DNFs)              |
 | positionText   | TEXT      | Textual representation of position (e.g., "R" for retired, etc.) |
 | positionOrder  | INT       | Order of finishing position (numeric, always present)            |
-| points         | INT       | Points scored in the sprint race                                 |
+| points         | FLOAT     | Points scored in the sprint race                                 |
 | laps           | INT       | Number of laps completed                                         |
 | time           | TEXT      | Sprint time or gap to winner (format: "H:MM:SS.sss" or "+X.XXX") |
 | milliseconds   | INT       | Sprint time in milliseconds (nullable)                           | 
