@@ -13,4 +13,6 @@ Relational Design: Tables are normalized and linked by primary and foreign keys 
 
 Accurate Data Types: Uses appropriate SQL types (INT, FLOAT, TEXT, DATE) for each field, supporting both integer and fractional points.
 
+Prediction target : predict race finishing positions and constructor finishing race postition 
+
 Extensible: Easily add new seasons, races, or entities as F1 evolves.
